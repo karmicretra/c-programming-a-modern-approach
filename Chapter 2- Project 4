@@ -1,0 +1,11 @@
+#include <stdio.h>
+//Chapter 2. Project 4 
+
+void main()
+{
+    float amount;
+    printf("Enter an amount, cents inclusive: ");//asks the user for input i.e the amount to be taxed
+    scanf("%f", &amount);
+    amount += 0.05 * amount;// this basically means amount = amount + (0.05 * amount)
+    printf("With tax added:%.2f ", amount);
+}
