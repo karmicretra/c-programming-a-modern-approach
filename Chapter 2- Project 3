@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+//Chapter 2. Project 3 
+
+void main()
+{
+    float radius;
+    printf("Enter the radius of the sphere: ");//asks the user for input i.e the radius
+    scanf("%f", &radius);
+    float volume = 4.0f/3.0f * 22.0/7.0 * (pow(radius, 3));//pow(a, b) from the math header file, a is the base number, b is the power
+    printf("%.3f cubic metres", volume);//.3f print 3 digits after the decimal point
+}
