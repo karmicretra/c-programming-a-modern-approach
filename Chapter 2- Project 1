@@ -1,0 +1,7 @@
+#include <stdio.h>
+//Chapter 2. Project 1 
+//writing this as a one-liner because its not a complex piece of code 
+//output is a check mark made up of asterisks
+
+void main(void){ printf("\t      *\n\t    *\n\t  *\n*       *\n  *   *\n    *\n");};
+
