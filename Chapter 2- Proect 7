@@ -1,0 +1,21 @@
+#include <stdio.h>
+//Chapter 2. Project 7 
+
+void main()
+{
+    int amount, first, second, third, fourth, remainder;//remainder is a placeholder for the new amount after being divided by a bill
+    printf("Enter a dollar amount: ");
+    scanf("%d", &amount);
+    first = amount / 20;
+    remainder = (amount - (first * 20));
+    second = remainder / 10;
+    remainder = (remainder - (second * 10));  
+    third = remainder / 5; 
+    remainder = (remainder - (third * 5));
+    fourth = remainder / 1;
+
+    printf("$20 bills: %d\n", first);
+    printf("$10 bills: %d\n", second);
+    printf("$5 bills: %d\n", third);
+    printf("$1 bills: %d", fourth);
+}
