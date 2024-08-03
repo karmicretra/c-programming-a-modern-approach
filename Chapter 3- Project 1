@@ -1,0 +1,13 @@
+#include <stdio.h>
+//Chapter 2. Project 8
+
+void main()
+{
+    int date, month, year;
+    printf("Enter the date in the format mm/dd/yyyy\n"); 
+    scanf("%d/%d/%d", &month, &date, &year);// the '/' tells scanf your input should be separate
+    if((month >= 1 && month < 13) && (date >= 1 && date < 32)) //conditional and statements to ensure it works right ti an extent
+        printf("You entered the date: %d%2d%2d", year, month, date);
+    else
+        printf("You entered an invalid date format");
+}
