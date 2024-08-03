@@ -1,0 +1,21 @@
+#include <stdio.h>
+//Chapter 2. Project 8
+
+void main()
+{
+    float loanBalance, rate, monthlyPayment;//im using float for everything to account for all possible scenarios
+    printf("Enter the loan amount: \n$"); 
+    scanf("%f", &loanBalance);
+    printf("Enter the interest rate: \n%c",37);
+    scanf("%f", &rate);
+    printf("Enter monthly payment: \n$");
+    scanf("%f", &monthlyPayment);
+
+    loanBalance += loanBalance * rate/1200 - monthlyPayment; 
+    printf("Balance remaining after first payment:\t $%.2f\n", loanBalance);
+    loanBalance += loanBalance * rate/1200 - monthlyPayment; 
+    printf("Balance remaining after second payment:\t $%.2f\n", loanBalance);
+    loanBalance += loanBalance * rate/1200 - monthlyPayment; 
+    printf("Balance remaining after third payment:\t $%.2f\n", loanBalance);
+}
+
