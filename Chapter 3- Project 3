@@ -1,0 +1,18 @@
+#include <stdio.h>
+//Chapter 3. Project 3
+
+void main()
+{
+    int gsiPrefix, groupID, PubCode, ItemNo, CheckDigit; 
+
+    printf("Enter ISBN: ");                                                                                                                                                                           
+    scanf("%d-%d-%d-%d-%d", &gsiPrefix, &groupID, &PubCode, &ItemNo, &CheckDigit);
+
+    printf("\nGSI prefix: %d\n"
+        "Group identifier: %d\n" 
+        "Publisher code: %d\n"
+        "Item number: %d\n" 
+        "Check digit: %d\n", 
+        gsiPrefix, groupID, PubCode, ItemNo, CheckDigit);
+}
+
