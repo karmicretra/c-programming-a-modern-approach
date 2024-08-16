@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main()
+{
+    int AreaCode, TelPrefix, LineNo;
+
+    printf("Enter phone number [(xxx)xxx-xxxx] : ");
+    scanf("(%d) %d-%d", &AreaCode, &TelPrefix, &LineNo);
+
+    printf("You Entered %d.%d.%d", AreaCode, TelPrefix, LineNo);
+
+}
