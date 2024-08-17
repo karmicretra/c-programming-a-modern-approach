@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+    int storage[4][4], RowS[4], ColS[4], DiagS[2];
+    printf("Enter the numbers from 1 till 16 in no particular order: \n");
+
+    for(int i = 0; i < 4; i++)
+    {//get input
+        for(int j = 0; j < 4; j++)
+        {
+            scanf("%d", &storage[i][j]);
+        }
+    }
+
+    system("cls");
+
+    for(int i = 0; i < 4; i++)
+    {  //prints your input in a 4x4 matrix format 
+        for(int j = 0; j < 4; j++)
+        {
+            printf("%2d ", storage[i][j]);
+            if(j == 3)
+                printf("\n");
+        }
+    }
+
+    int a = 0;
+    for(int i = 0; i < 4; i++)
+    {
+        ColS[a] = 0;
+        RowS[a] = 0;
+        for(int j = 0; j < 4; j++)
+        {
+            RowS[a] += storage[i][j];
+            ColS[a] += storage[j][i];
+            if(j == 3)
+                a++;
+        }
+    }
+
+    DiagS[0] = storage[0][2] + storage[1][1] + storage[2][0];//for the diagonals
+    DiagS[1] = storage[0][0] + storage[1][1] + storage[2][2];
+
+    printf("Row sums: ");
+    for(int i = 0; i < 4; i++)
+    {
+        printf("%d ", RowS[i]);
+    }
+    printf("\nColumn sums: ");
+    for(int j = 0; j < 4; j++)
+    {
+        printf("%d ", ColS[j]);
+    }
+    printf("\nDiagonals sums: ");
+    for(int k = 0; k < 2; k++)
+    {
+        printf("%d ", DiagS[k]);
+    }
+}
