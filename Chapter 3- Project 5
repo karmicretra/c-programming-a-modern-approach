@@ -14,7 +14,7 @@ void main()
         }
     }
 
-    system("cls");
+    system("cls || clear");
 
     for(int i = 0; i < 4; i++)
     {  //prints your input in a 4x4 matrix format 
@@ -40,8 +40,8 @@ void main()
         }
     }
 
-    DiagS[0] = storage[0][2] + storage[1][1] + storage[2][0];//for the diagonals
-    DiagS[1] = storage[0][0] + storage[1][1] + storage[2][2];
+    DiagS[0] = storage[0][3] + storage[1][2] + storage[2][1] + storage[3][0];//for the diagonals
+    DiagS[1] = storage[0][0] + storage[1][1] + storage[2][2] + storage[3][3];
 
     printf("Row sums: ");
     for(int i = 0; i < 4; i++)
