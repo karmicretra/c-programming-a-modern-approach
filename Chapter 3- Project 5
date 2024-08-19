@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+int main()
 {
     int storage[4][4], RowS[4], ColS[4], DiagS[2];
     printf("Enter the numbers from 1 till 16 in no particular order: \n");
@@ -58,4 +58,5 @@ void main()
     {
         printf("%d ", DiagS[k]);
     }
+return(0);
 }
